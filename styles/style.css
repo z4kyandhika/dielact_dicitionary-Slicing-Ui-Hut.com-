@@ -1,0 +1,531 @@
+:root {
+  --primary: #5ce4ca;
+  --secondary: #fffaa4;
+  --skypink: #ff7d7d;
+  --colorway: rgb(0, 61, 49);
+  --white-main: #f5f5f5;
+}
+
+@font-face {
+  font-family: 'Neue MontReal Reguler';
+  src: url(../assets/font/PPNeueMontreal-Medium.otf);
+}
+
+@font-face {
+  font-family: 'Neue MontReal SemiBold';
+  src: url(../assets/font/PPNeueMontreal-Book.otf);
+}
+
+@font-face {
+  font-family: 'Neue MontReal Thin';
+  src: url(../assets/font/PPNeueMontreal-Thin.otf);
+}
+
+*,
+*::before *::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: 'Neue MontReal SemiBold';
+  letter-spacing: 1px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* height: 1000vh; */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.bg-clr-white {
+  background-color: #fff;
+  color: var(--colorway);
+  font-family: 'Neue MontReal SemiBold';
+}
+
+.bg-clr-secondary {
+  background-color: var(--secondary);
+  color: var(--colorway);
+  font-family: 'Neue MontReal Reguler';
+  font-weight: 800;
+}
+
+.special_link {
+  padding-bottom: 2px;
+  font-weight: bolder;
+  border-bottom: 1px solid black;
+}
+
+.primary-button {
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 61, 49, 0.9);
+}
+
+.primary-button:hover {
+  background-color: rgba(0, 61, 49, 1);
+}
+
+.secondary-button {
+  text-align: start;
+  width: fit-content;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  padding: 12px 1.8em;
+  cursor: pointer;
+  color: var(--colorway);
+  background-color: rgba(255, 250, 164, 0.9);
+  border: none;
+  margin-top: 20px;
+}
+
+.secondary-button:hover {
+  background-color: rgba(255, 250, 164, 1);
+}
+
+.primary-txt {
+  color: var(--colorway);
+}
+
+.primary {
+  color: var(--primary);
+}
+
+html {
+  font-family: 'Neue MontReal Reguler';
+}
+
+li,
+a {
+  color: black;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+/* ROOT TEMPLATE  */
+
+.hero-section {
+  /* height: fit-content; */
+  position: relative;
+  background-color: var(--primary);
+  background-image: url(../assets/image/image-17.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 20px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+nav {
+  margin: 0 auto;
+  padding: 15px 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  font-size: 0.9rem;
+  font-family: 'Neue MontReal SemiBold';
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-link:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 3em;
+
+  position: relative;
+  left: 3em;
+  padding: 12px;
+}
+
+.navbar-brand {
+  font-family: 'Neue MontReal Reguler';
+  font-weight: 300;
+  padding: 10px 5px;
+  font-size: 1.8rem;
+  color: var(--colorway);
+}
+
+.logo {
+  position: relative;
+  top: 2px;
+}
+
+.button-wrap .btn {
+  width: fit-content;
+  font-size: small;
+  border-radius: 4px;
+  width: 6em;
+  padding: 12px 0;
+  border: 1.5px solid var(--colorway);
+}
+
+.button-wrap .btn:nth-child(1) {
+  font-size: 1rem;
+  background-color: transparent;
+  transition: 128ms ease-in-out;
+}
+
+.button-wrap .btn:nth-child(1):hover {
+  border-color: transparent;
+  background-color: var(--colorway);
+  color: white;
+}
+
+.button-wrap button:nth-child(2) {
+  font-size: 1rem;
+  margin-left: 20px;
+}
+
+/* BIGGER HEADLINE UNDER NAV  */
+
+.big-headline-section {
+  position: relative;
+  padding: 50px 10px;
+  margin: 0 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.headline-box {
+  font-size: 4rem;
+  text-align: center;
+  width: fit-content;
+  padding: 0.9rem 28px;
+  border-radius: 18px;
+  user-select: none;
+  transition: all 128ms ease;
+  box-shadow: 0 8px 8px 0 rgba(0, 61, 49, 0.2);
+}
+
+.big-headline-section::selection {
+  background: none;
+}
+
+.under {
+  display: flex;
+  justify-content: center;
+  gap: 11px;
+}
+
+.description {
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  font-family: 'Neue MontReal SemiBold';
+  padding: 5px;
+  width: 39em;
+  text-align: center;
+}
+
+.description span {
+  width: 100%;
+  padding: 0 50px;
+}
+
+.btn {
+  width: fit-content;
+  font-size: small;
+  border-radius: 4px;
+  width: 10em;
+  padding: 13px;
+  border: 1.5px solid var(--colorway);
+}
+
+.btn.grouping {
+  border: white;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.btn.grouping span {
+  padding-right: 1.5em;
+}
+
+#icons-header-globe {
+  position: absolute;
+  top: 15px;
+  left: 15%;
+}
+
+#icons-header-smiling {
+  position: absolute;
+  right: 20px;
+}
+
+#icons-lang-1,
+#icons-lang-2 {
+  position: absolute;
+  bottom: 30px;
+}
+
+#icons-lang-1 {
+  bottom: 38px;
+  left: 12%;
+}
+
+#icons-lang-2 {
+  bottom: 15px;
+  right: 12%;
+}
+
+.card {
+  background-color: var(--main);
+}
+
+/* Media queris for width laptop 128px navigation option  */
+@media only screen and (max-width: 826px) {
+  #icons-header-globe,
+  #icons-header-smiling {
+    display: none;
+  }
+  .big-headline-section {
+    width: 100%;
+    margin: 5rem 0 0 0;
+    padding: 0;
+  }
+
+  .headline-box {
+    top: 0;
+    font-size: 8vw;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .description span {
+    padding: 0 30px;
+  }
+  nav.active {
+    height: 30px;
+    animation-name: dropdown;
+    animation-duration: 528ms;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes dropdown {
+    0% {
+      height: 30px;
+    }
+
+    100% {
+      height: 290px;
+    }
+  }
+
+  nav {
+    padding: 30px 2rem;
+    height: 30px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: flex-start;
+    animation-name: updropdown;
+    animation-duration: 528ms;
+    animation-fill-mode: forwards;
+  }
+
+  .nav-menu {
+    position: relative;
+    left: 0;
+    gap: 2rem;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 826px) and (max-width: 1300px) {
+  nav {
+    padding: 12px 2rem;
+  }
+
+  .nav-menu {
+    gap: 1.25em;
+  }
+}
+/* for burger navigation */
+@media only screen and (max-width: 826px) {
+  nav {
+    position: relative;
+    z-index: 1;
+    background-color: var(--primary);
+  }
+
+  .hamburger {
+    position: absolute;
+    right: 2.5rem;
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .hero-section {
+    height: 620px;
+  }
+
+  .big-headline-section {
+    height: fit-content;
+    padding: 50px 0;
+    z-index: 0;
+    margin: auto;
+    position: absolute;
+    padding: inherit;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+@media only screen and (max-width: 559px) {
+}
+
+/* icon for header > 1400px  */
+@media only screen and (min-width: 1040px) {
+  nav {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  #icons-header-globe {
+    left: 0;
+  }
+
+  #icons-header-smiling {
+    top: -12px;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 620px) {
+  #icons-lang-1 {
+    bottom: 40px;
+    left: 10px;
+  }
+
+  #icons-lang-2 {
+    bottom: 0;
+    right: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  nav {
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  .button-wrap {
+    padding-left: 14px;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+  }
+
+  .nav-menu {
+    margin-top: 20px;
+    padding-left: 14px;
+  }
+
+  .hamburger {
+    right: 12px;
+  }
+  .hero-section {
+    height: 500px;
+    padding-bottom: 0;
+  }
+  .brands {
+    padding-left: 12px;
+  }
+
+  .big-headline-section {
+    height: 400px;
+    padding-top: 10px;
+    margin: 20px 0 30px 0;
+    position: absolute;
+    /* background-color: blue; */
+    top: 22px;
+  }
+  .headline-box {
+    border-radius: 8px;
+  }
+  .big-headline-section .description {
+    padding: 0;
+    font-size: 0.6rem;
+  }
+
+  .description span {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #icons-lang-1 {
+    left: 10px;
+  }
+
+  #icons-lang-2 {
+    right: 10px;
+  }
+}

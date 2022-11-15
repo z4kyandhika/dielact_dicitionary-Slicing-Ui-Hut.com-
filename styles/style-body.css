@@ -1,0 +1,442 @@
+main {
+  background-color: var(--white-main);
+  padding-top: 20px;
+}
+
+.fs-headline {
+  font-family: 'Neue MontReal Reguler';
+  font-size: 3rem;
+}
+
+.fs-headline-description {
+  font-size: 2rem;
+}
+
+.fs-description {
+  font-size: 0.9rem;
+}
+
+.about-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  margin: 10% 0 180px 0;
+  padding: 0 10%;
+}
+
+.about-page h2 {
+  margin-bottom: 20px;
+}
+
+.about-page p {
+  font-size: 0.9rem;
+}
+
+#vector--image-girl {
+  max-height: 440px;
+  max-width: 400px;
+}
+
+.description-box {
+  max-width: 500px;
+}
+
+.feature {
+  margin: 80px 0;
+}
+
+.feature h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.wrap-box {
+  max-width: 1100px;
+  margin: 60px 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.item {
+  background: #fffae9;
+  padding: 20px 22px;
+}
+
+.item p {
+  font-family: 'Neue MontReal SemiBold' !important;
+}
+
+.item p span {
+  font-family: 'Neue MontReal Reguler';
+  font-weight: 800;
+}
+
+.about-page:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+
+.color-blocking {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-color: var(--skypink);
+  padding: 50px 10px;
+}
+
+.color-blocking svg {
+  height: 20px;
+  z-index: 0;
+}
+
+.color-blocking svg:nth-of-type(1) {
+  position: absolute;
+  left: 0;
+}
+
+.color-blocking svg:nth-of-type(2) {
+  position: absolute;
+  right: 0;
+}
+
+.color-blocking h3 {
+  z-index: 1;
+  font-size: 1.3rem;
+}
+
+.rating {
+  padding: 80px 20px;
+  background: #fffae9;
+}
+
+.heading {
+  padding-bottom: 50px;
+}
+
+.heading p {
+  text-align: center;
+  margin: 0 auto;
+
+  color: #596966;
+}
+
+.heading h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card {
+  background-color: #fff;
+  position: relative;
+  max-width: 290px;
+  min-width: 250px;
+  min-height: fit-content;
+  height: 330px;
+  padding: 40px 30px;
+  border-radius: 12px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.inner-heading-card h4:nth-child(1) {
+  line-height: 25px;
+}
+
+.inner-heading-card span {
+  font-family: 'Neue MontReal SemiBold' !important;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.card p {
+  line-height: 25px;
+  font-size: 0.9rem;
+  color: #596966;
+}
+
+.card-footer {
+  width: 80%;
+  position: fixed;
+  bottom: 35px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+hr {
+  position: relative;
+  top: 2px;
+}
+
+.swiper {
+  padding-top: 20px;
+  max-width: 1150px;
+  height: 520px;
+}
+
+.swiper-pagination-bullet {
+  padding: 0 20px;
+  border-radius: 4px;
+  background-color: #c3b894;
+}
+
+.swiper-pagination-bullet:nth-of-type(2) {
+  margin: 0 20px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--colorway);
+}
+
+.color-blocking-primary {
+  background-color: var(--primary);
+  padding: 100px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+
+.wrap-left {
+  justify-self: start;
+  padding-left: 20px;
+}
+.wrap-left .headline-box:nth-child(1),
+.wrap-left .headline-box:nth-child(2) {
+  margin-bottom: 10px;
+  font-size: 2.8rem;
+  border-radius: 12px;
+  font-weight: 800;
+}
+
+.wrap-right p {
+  line-height: calc(100% + 10px);
+  margin-bottom: 40px;
+  font-size: 0.9rem;
+}
+
+footer {
+  width: 100%;
+  padding: 80px 0 40px 0;
+  background-color: #fffae9;
+}
+
+.footer-container {
+  margin: 0 auto;
+  max-width: 889px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 30px 0;
+}
+
+.listing li {
+  display: block;
+}
+
+.listing li a,
+.edit a {
+  color: #596966;
+}
+
+.listing li a:hover,
+.edit a:hover {
+  color: inherit;
+}
+
+.bottom-footer {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 889px;
+  margin: 0 auto;
+}
+
+.edit {
+  left: -8px;
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mariana-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-group img:nth-child(2) {
+  margin: 0 5px;
+}
+
+@media (min-width: 475px) {
+  .wrap-box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1107px) {
+  .wrap-box {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 60px auto;
+  }
+
+  .item p {
+    font-family: 'Neue MontReal SemiBold' !important;
+    font-size: 0.9rem;
+  }
+
+  .color-blocking {
+    padding: 100px;
+  }
+
+  .color-blocking h3 {
+    font-size: 1.9rem;
+  }
+
+  .color-blocking svg {
+    height: 50px;
+  }
+
+  .color-blocking svg:nth-of-type(1) {
+    left: 50px;
+  }
+  .color-blocking svg:nth-of-type(2) {
+    right: 50px;
+  }
+
+  .heading p {
+    max-width: 50%;
+  }
+  .color-blocking-primary {
+    padding: 100px 5%;
+  }
+
+  .edit {
+    position: relative;
+    left: -18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .color-blocking-primary {
+    padding: 100px 20px;
+    gap: 10px;
+  }
+
+  .wrap-left .headline-box {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media (max-width: 826px) {
+  .about-page {
+    flex-direction: column-reverse;
+  }
+
+  .about-page:nth-of-type(2) {
+    flex-direction: column;
+  }
+
+  .color-blocking {
+    padding: 50px 10px;
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bottom-footer {
+    padding: 20px 40px;
+  }
+  .edit {
+    column-gap: 2px;
+  }
+
+  .color-blocking-primary {
+    padding: 100px 0;
+    gap: 15px;
+  }
+
+  .wrap-left .headline-box {
+    font-size: 2rem !important;
+  }
+
+  .wrap-left {
+    margin: auto;
+  }
+
+  .wrap-right p {
+    margin: 12px;
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 501px) {
+  main {
+    padding-top: 50px;
+  }
+
+  .fs-headline {
+    font-size: 1.9rem;
+  }
+
+  .fs-description {
+    font-size: 0.7rem;
+  }
+
+  .about-page h2 {
+    font-family: 'Neue MontReal Reguler';
+    margin-bottom: 20px;
+  }
+
+  #vector--image-girl {
+    max-height: 300px;
+  }
+
+  .feature h2 {
+    font-size: 1.75rem;
+  }
+
+  .rating {
+    padding: 40px 0;
+  }
+
+  .color-blocking-primary {
+    grid-template-columns: 1fr;
+  }
+
+  .wrap-right p {
+    padding: 12px;
+  }
+
+  .wrap-right .under {
+    justify-content: center !important;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .edit {
+    flex-direction: column;
+    left: 0;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .wrap-left .headline-box {
+    font-size: 1.2rem !important;
+  }
+}
